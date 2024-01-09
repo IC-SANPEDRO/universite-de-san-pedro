@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/x-twitter?f=brands&s=solid">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> 
+    <title>IC-USP</title>
+    
+</head>
+<body>
+    <header>
+        <img src="logo-club info.jpg" alt="Logo du Club" >
+        <img src="WhatsApp Image 2023-12-10 à 14.32.16_c76b9a64.jpg" alt="USP ">
+        <h1>CLUB D'INFORMATIQUE DE L'UNIVERSITE DE SAN PEDRO </h1>
+        
+    </header>
+   
+    <div class="container">
+        <nav>
+            
+            <ul>
+
+                <li>
+                    <a href="#" id="menu">
+                        <button  class="btn1" onclick="rafraichirPage()">
+                            <i class="fa fa-home">
+                                home
+                            </i>
+                        </button>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <button class="btn1">
+                            <i class="fa fa-exclamation-triangle">
+                                Reglement du club 
+                            </i>
+                        </button>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <button class="btn1">
+                            <i class="fa fa-file-text">
+                                Projet
+                            </i>
+                        </button>
+                    </a>
+                </li>
+                
+                <li>
+                    <a  href="https://forms.gle/3WLyC9nz5o5CxBPw6" target="_blank" rel="noopener noreferrer">
+                        <button class="btn1" >
+                             <i class="fa fa-sign-in" >
+                             S'inscrire
+                             </i>
+                             
+                        </button>
+                    </a>
+                </li>
+
+                
+
+            </ul>
+        </nav>
+        <div class="main-section">
+            <div class="sub-section" id="informations">
+              
+             <button class="btn1" onclick="afficherCacher('welcome')"  ><h2 >Informations</h2></button> 
+              <p id="welcome" class="paragraphe">Bienvenue au Club d'Informatique de l'universié de San Pedro (IC-USP)!
+
+                Nous sommes ravis de t'accueillir parmi nous et de te voir rejoindre notre communauté passionnée d'informatique. C'est un plaisir de t'avoir parmi les membres du club, et nous sommes impatients de partager et d'apprendre ensemble dans le monde fascinant de la technologie.
+      
+                Le Club d'Informatique est l'endroit idéal pour élargir tes connaissances, participer à des projets passionnants, et rencontrer d'autres personnes partageant les mêmes intérêts. Notre équipe dynamique est là pour t'aider à explorer les différentes facettes de l'informatique, que ce soit la programmation, le développement web, l'intelligence artificielle ou d'autres domaines.
+      
+                Si tu as des questions, des idées à partager, ou si tu souhaites simplement discuter de sujets liés à l'informatique, n'hésite pas à t'impliquer. Notre club est un espace inclusif où chacun peut contribuer et apprendre ensemble.</p>
+            </div>
+          
+            <div class="sub-section" id="projet">
+              
+                <button class="btn1" onclick="afficherCacher('project')" ><h2>Projet</h2></button>
+              <p id="project" class="paragraphe">Auncun projet pour l'instant</p>
+            </div>
+          
+            <div class="sub-section" id="activite">
+              
+                <button class="btn1" onclick="afficherCacher('activity')" ><h2>Activités</h2></button>
+              <p id="activity" class="paragraphe">Les activités débuterons bientôt, le programe des activités vous sera communiqué d'ici peu</p>
+            </div>
+          
+            <div class="sub-section" id="historique">
+                
+                <button class="btn1" onclick="afficherCacher('History')" ><h2>Historique</h2></button>
+              <p id="History" class="paragraphe"> .........</p>
+            </div>
+          </div>
+          
+        
+        
+ <!--       <section> Sction for refister and login form, it will upload after 
+            <div class="sec container">
+                <div class="form-wrapper">
+                    <div class="card">
+                        <div class="card-header">
+                            <div id="forlogin" class="form-header active" >Se connecter </div>
+                            <div id="forregister" class="form-header">S'inscrire</div>
+
+                        </div>
+                        <div action="traitement.php" class="card-body" id="formContainer" method="post">
+                            <form id="formlogin">
+                                <input type="text" class="form-control" placeholder="Nom d'utilisateur*" required>
+                                <input type="password" class="form-control" placeholder="@password*" required>
+                                <button class="formbutton" type="submit" >Connexion</button>
+                                
+                            </form>
+                          
+                            <form action="traitement.php" id="formregister" class="toggleform" method="post" onsubmit=afficherMessage()>
+                                <label for="sujet">Choisissez une option</label>
+                                
+                                <select class="form-control" name="Ecole ou filère" id="Filières" required>
+                
+                                    <option value="" disabled selected hidden>Votre filière</option>
+                                <option value="PREPA">Classe preparatoire</option>
+                                <option value="UFR SCIENCE DE LA MER">SDM</option>
+                                <option value="UFR AGRICULTURE">ARHAI</option>
+                                <option value="UFR TOURISME">TES</option>
+                                <option value="EIBTP">BTP</option>
+                                <option value="EICN">CN</option>
+                                <option value=""></option>
+                                </select>
+                                
+                                <label for="sujet">choisissez une option</label>
+                                
+                                <select class="form-control" name="Ecole ou filère" id="Niveau" required>
+                                <option value="" disabled selected hidden>Votre Niveau </option>
+                                <option name ="" value="1ère Année">Prépa 1/Licence 1</option>
+                                <option  value="2ème Année">Licence 2</option>
+                                <option value="3e Année">Prépa 2/Licence 3</option>
+                                <option  value="ing1">ING 1</option>
+                                <option  value="ing2">ING 2</option>
+                                </select>
+                                <input type="text" name="nom" class="form-control" placeholder="NOM *" required>
+                                <input type="text" name="prenom" class="form-control" placeholder="PRENOM *" required> 
+                                <input type="email" name="email" class="form-control" placeholder="Votre e-mail *" required> 
+                                <input type="password" name="password" class="form-control" placeholder="Azerty" minlength="8">                         
+                                <button class="formbutton" type="submit">Inscription</button>
+                                <div id="message"></div>
+                                <span>Dont share this form it will be upload after for register please follow the link on the home page  </span>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+  <!--       <section id="formulaireSection">  we will upload it also after suggestion   
+
+        </section>-->
+        
+    </div>
+    
+    <div id="consoleOutput"></div>
+   
+    
+    
+   
+    
+
+
+<footer>
+    <p><a href="mailto:IC-USP@gmail.com">Contactez-nous :</a> IC-USP@gmail.com | 01, 01 BP 1800, Côte d’Ivoire, San Pedro</p>
+  <p>Suivez-nous sur nos reseaux sociaux:
+    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://chat.whatsapp.com/KA17X2adb7OJd4y58eF4Ys" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-snapchat"></i></a>
+  </p>
+  <p>&copy; 2024 IC-USP - Tous droits réservés.</p>
+</footer>
+</body>
+</html>

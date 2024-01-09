@@ -1,0 +1,318 @@
+/* Styles spécifiques pour les appareils mobiles */
+@media only screen and (max-width: 600px) {
+    header {
+      padding: 0.625;
+    }
+  }
+  
+  body{
+      background-color:#3498db ;
+  }
+  .container {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      padding:0 0.5;
+      background: linear-gradient(rgba(0,0,0, .4), transparent),  center center no-repeat;
+      background-size: cover;
+  }
+  header {
+      top: 0;
+      left: 0; 
+      padding: 0.938rem;
+      color: #fff;
+      text-align: left; /* Pour aligner le logo à droite, vous pouvez ajuster en conséquence */
+      background-color: rgba(32, 93, 207, 0.637);
+      display: flex;
+      width: 100%;
+      justify-content: space-between; /* Aligner le contenu à l'extrémité opposée pour que le texte soit à gauche et le logo à droite */
+      align-items: center; /* Aligner verticalement au centre */
+      padding: 0.625;
+      z-index: 1000;
+      
+        
+  }
+  img{
+      width: 150px; /* Définir la largeur  */
+      height: auto; /* Garder le rapport hauteur/largeur d'origine */
+  }
+  
+  
+  nav {
+      
+      background-color:transparent;
+  
+      padding: 0.006rem;
+      display: flex;
+      justify-content: space-around;
+      
+  }
+  
+  nav a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      text-align: justify;
+  }
+  
+  .logo{
+      background-image: url('IMG\WhatsApp Image 2023-12-10 à 14.32.16_c76b9a64.jpg');
+  }
+  
+  nav ul{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1;
+      padding-right: 1.25rem;
+      text-align: right;
+      list-style: none;
+  }
+  
+  nav ul li{
+      align-items: center;
+  }
+  nav ul li a{
+      padding: 0.625;
+      text-decoration: none;
+      color: #3498db;
+      font-size: 16px;
+  
+  }
+  
+  nav ul li a i {
+      color: white;
+      letter-spacing: 0.313;
+  }
+  
+  section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3.125 0;
+    }
+  
+  .form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: auto;
+  }
+  .form-wrapper .card {
+      width: 360px;
+      padding: 20px;
+      background-color: rgba(0 0 0/35%);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .3s, visibilyty .3s;
+  
+  
+  }
+  .card.show{
+      visibility: visible;
+      opacity: 1;
+  }
+  .card-header {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 30px 20px 0;
+      font-size: 1.1rem;
+      color: #3498db;
+      box-shadow: 2px 3px 8px white;
+      border-radius: 50px;
+  }
+  .card-header .form-header {
+      flex: 50%;
+      text-align: center;
+      padding: 10px 0px;
+      border: 1px solid transparent;
+      border-radius: 50px;
+      
+      cursor: pointer;
+  }
+  
+  .card-header .form-header.active {
+      box-shadow: inset 1px 1px 2px rgb(19 210 177/55%), inset 1px 1px 2px rgb(19 210 177/55%),1px 1px 2px rgb(19 210 177/55%),1px 1px 2px rgb(19 210 177/55%);
+          inset: 1px 1px 2px rgb(19 210 177/55%);
+          border-color: rgb(32, 51, 218);
+      transition: border-color .3s, box-shadow .3s;
+  }
+  
+  .card-body{
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 40px 0;
+      text-align: center;
+  }
+  
+  form{
+      flex: 0 0 100%;
+  }
+  .toggleform{
+      visibility: hidden;
+      opacity: o;
+      transition: opacity .3s, visibility .3s;
+  }
+  .form-control{
+      width: 100%;
+      border: none;
+      background: none;
+      border-bottom: 1px solid rgb(134 255 249/65%);
+      border-color: white;
+      outline: none;
+      padding: 10px 5px;
+      margin-bottom: 20px;
+      color: white;
+  }
+  .form-control::placeholder {
+      color: whitesmoke;
+  }
+  .formbutton {
+      border: 1px solid transparent;
+      padding: 1rem -3rem;
+      background-color:transparent    ;
+      border-radius: 50px;
+      margin-top: 1rem;
+      font-size: 1rem;
+      transition: transform .3s, boxshadow .3s;
+      
+  
+  }
+  .formbutton:hover {
+      box-shadow: 1px 3px 115px transparent;
+      transform: translateY(-5px);
+  }
+  marquee {
+      color: goldenrod;
+  }
+  
+  
+  
+  label{
+      color: white;}
+  
+  
+  
+  
+  select.form-control {
+      background-color: #3498db ;
+      border-radius: 3.125rem
+      
+  }
+  div.message{
+      box-shadow: 1px 2px 5px;
+      background-color: goldenrod;
+  }
+  .btn1 {
+      background-color: transparent; /* Blue background */
+      border: none; /* Remove borders */
+      border-radius: 3.125rem;
+      color: white; /* White text */
+      padding: 0.75rem 1rem; /* Some padding */
+      font-size: 1rem; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+      transition: background-color 0.3s;
+    }
+    
+    /* Darker background on mouse-over */
+    .btn1:hover {
+      background-color: RoyalBlue;
+    }
+  
+   /* button.btn{
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-style:oblique;
+      margin-top: 0;
+      background-color: transparent;
+      color: black;
+      border: 1px solid transparent;
+      transition: border-color .3s;
+   }
+  button.btn:hover{
+      border-color: goldenrod;
+      transition: all;
+    }/* an other css class of our button if u want to use it just change zhe classe of our button in the html files 
+  
+    */
+  h1{
+      font-family: "Times New Roman", sans-serif;
+      /* Vous pouvez également spécifier d'autres propriétés de la police comme la taille, le style, etc. */
+     
+  }
+  
+  
+  .main-section {
+        display: flex;
+        background-color: #3498db;
+        align-items: center;
+        border-radius: 0.625rem;
+        overflow: hidden;
+        box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
+      }
+  
+      .sub-section {
+        flex: 1;
+        
+        padding: 1.25rem;
+        border-radius: o.625rem;
+        overflow-y: auto;
+        background-color: #3498db;
+        box-shadow: 0 0 0.625 rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+      }
+  
+  
+      .circular-div {
+        width: 6.25;
+        height: 6.25;
+        background-color: #e74c3c;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 20px; 
+        }
+      
+        footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+  
+      footer p {
+        margin: 0;
+      }
+  
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      .paragraphe{
+          display: none;
+      }
+  
+  
+      .visible {
+        display: block;
+        width: 100%;
+      }
