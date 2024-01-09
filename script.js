@@ -133,7 +133,16 @@ const displayform=_('displayform');
   paragraphe.classList.toggle('visible');
 }
 
-    
+ const menuButton = _('menu'); // Ajout d'une référence au bouton de menu pour les petits écrans
+
+// Gestionnaire d'événement pour le bouton de menu sur les petits écrans
+menuButton.addEventListener('click', function () {
+    // Fermer le menu après la sélection d'une option
+    formContainer.style.transform = 'translate(0%)';
+    formContainer.style.transition = 'transform .5s';
+    formregister.classList.add('toggleform');
+    formlogin.classList.remove('toggleform');
+});   
     
     
     
